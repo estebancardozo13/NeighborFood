@@ -1,0 +1,43 @@
+#footer-call-to-action {
+    background:#EECE9F ;
+    padding: 2em 0;
+    color:white ;
+} 
+
+#footer-call-to-action p {
+    margin:0 auto;
+}
+
+#footer-button {
+    display: table;
+}
+
+#footer-button #footer-menu,
+#footer-button .copyright {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+
+#footer-button #footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-align: right;
+
+}
+
+#footer-button #footer-menu ul li{
+    display: inline-block;
+}
+
+#footer-button #footer-menu ul li::after{
+    content:"/ " ;
+}
+
+#footer-button #footer-menu ul li a {
+
+ display: block;
+ padding: 0 1em;
+ color:#EECE9F ;
+}

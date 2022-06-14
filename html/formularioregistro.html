@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=StyleSheet href="\css\formularioregistro.css" >
+    <link rel="stylesheet" href="\css\normalize.css" />
+    <link rel="shortcut icon" href="assets/img/666.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&display=swap"rel="stylesheet"/>
+     <!-- iconos -->
+<script
+src="https://kit.fontawesome.com/139d37edbf.js"
+crossorigin="anonymous"
+></script>
+
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="volver">
+                <a href="/html/login.html">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </a>
+            </div>
+          <div>
+            <a href="/index.html">
+              <img class="logo" src="/assets/img/logo-nf-completo.webp" alt="logo neighborFood">
+            </a>
+          </div>
+        </header>
+<main>
+    <div class="imagen">
+            <img class = "logodos" src="/assets/img/666.png">
+        <div class="pngmesero"type="img">
+            <img class= "mesero" src="/assets/img/mesero1-removebg-preview.png"/>
+        </div>
+    </div>
+    <form>
+
+        <div class="registro">
+            <h1>Registro de usuario</h1>
+               <div>        
+            <label for="documento">Elige un tipo de documento:</label>
+            <select class="controls" name="Documento" id= "documento">
+            <option value="0">Seleccione</option>
+            <option value="t.i">Tarjeta de Identidad</option>
+            <option value="c.c">Cedula<edula</option>
+            <option value="c.e">Cedula de Extranjeria</option>
+            <option value="pas">Pasaporte</option>
+            </select>
+      
+            <input class= "controls" type="text"placeholder="Numero De Documento" aria-label="Numero De Documento">
+            </div>
+            <div>
+            </form>
+            <form  class="genero">
+            <label for="genero" class="select">Elige tu genero:</label>
+            <select name="genero" id= "genero">
+            <option value="0">Seleccionar</option>
+            <option value="f">Femenino</option>
+            <option value="m">Masculino</option>
+            <option value="in">No especifica</option>
+            </select>
+            </form>
+            </div>
+            <input class= "controls" type="text"placeholder="Nombres" aria-label="Nombres">
+           
+            <input class= "controls" type="text"placeholder="Apellidos" aria-label="Apellidos">
+         
+            <input class= "controls" type="text"placeholder="Correo Electronico" aria-label="Correo Electronico">
+            
+            <input class= "controls" type="text"placeholder="Telefono Celular" aria-label="Telefono Celular">
+            <div>
+          <form>
+            <label class="select" for="Localidad">Elige tu localidad:</label>
+            <select name="localidad" id= "localidad">
+            <option value="sel">Seleccionar</option>
+            <option value="usa">Usaquén</option>
+            <option value="cha">Chapinero<edula</option>
+            <option value="sant">Santa Fe</option>
+            <option value="sanc">San Cristóbal</option>
+            <option value="usm">Usme<edula</option>
+            <option value="tun">Tunjuelito</option>
+            <option value="bos">Bosa</option>
+            <option value="kene">Kennedy</option>
+            <option value="fon">Fontibón<edula</option>
+            <option value="enga">Engativá</option>
+            <option value="sub">Suba</option>
+            <option value="Barrio">Barrios Unidos<edula</option>
+            <option value="teu">Teusaquillo</option>
+            <option value="lm">Los Mártires</option>
+            <option value="an">Antonio Nariño</option>
+            <option value="pa">Puente Aranda<edula</option>
+            <option value="lc">La Candelaria</option>
+            <option value="ru">Rafael Uribe Uribe</option>
+            <option value="cu">Ciudad Bolívar<edula</option>
+            <option value="sumz">Sumapaz</option>
+            </select>
+            </div>
+                    
+
+            
+            <input class= "controls" type="text"placeholder="Barrio" aria-label="Barrio">
+            
+            <input class= "controls" type="text"placeholder="Direccion" aria-label="Direccion">
+                  
+
+            <input class= "controls" type="password"placeholder="Ingrese Contraseña" aria-label="Ingrese Contraseña">
+        
+        <input class= "controls" type="password"placeholder="Confirme Contraseña" aria-label="Confirme Contraseña">
+        
+            <div class="mensaje">
+            <p>Estoy de acuerdo con: <a href="#" class="ter-cont">Terminos y Condiciones</p>
+            </div>
+            <br>
+            <label class="check" for="SI" >Si</label>
+            <input  class="caja" type="radio" name="terminos">  
+
+            <label class="check" for="NO" >No</label>
+            <input type="radio" class="caja" name="terminos">
+                      
+        
+        <button  class= "boton" type="button" onclick="alert('Se guardaron los datos del usuario')">Registrarse </button>
+      
+        <p><a href="/login.html" class="cuenta">¿ya tengo cuenta?</a></p>
+    </form>
+
+    </main>
+
+        
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.entradas{
+    width: 600px;
+    border-bottom: 12px;
+
+}
+.entradas input{
+  background: none;
+  color: #283618;
+  font-size: 28px;  
+  text-align: center;
+  padding: 10px 10px 10px 5px;
+  border: none;
+  width: 80%;
+  border-bottom: 1px solid black;
+  font-weight: 500;
+
+
+}
+
+
+.la{
+    
+    font-weight: bold;
+    font-size: 27px;
+    color: #283618;
+    
+    
+}
+
+.btn3{
+    transform: translateY(15px);
+}
+
+input:focus{
+    outline: none;
+    color: #283618;
+}

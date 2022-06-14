@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+.error{
+    width: 800px;
+    height: 800px;
+    transform: translate(600px, 0%);
+    position: static;
+    
+}
+body{
+    background-color: #FEFAE0;
+}
+.mensaje{
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    transform: translateY(-170%);
+    
+}

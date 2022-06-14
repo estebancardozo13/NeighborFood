@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.padre{
+
+    background:#606c38 ;
+    width: 45%;
+    margin: 20px auto;
+    height: 250px;
+    transform: translateY(120%);
+   
+}
+ 
