@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body {
+    background-color: #FEFAE0;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  header {
+    overflow: hidden;
+    background-color: #283618;
+    margin-bottom: 30px;
+    height: 60px;
+    width: 100%;
+  }
+
+  .header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .back i{
+      color:#FEFAE0;
+      font-size: 40px;
+      margin-left: 50px;
+  }
+
+  .logo {
+    height: 45px;
+    float: right;
+    margin-left: 700px;
+  }
