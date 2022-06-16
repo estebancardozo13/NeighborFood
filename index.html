@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NeighborFood</title>
+  <!-- Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <!-- Estilos -->
   <link rel="stylesheet" href="/css/normalize.css" />
   <link rel="stylesheet" href="/css/stylesFirst.css" />
@@ -16,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&display=swap" rel="stylesheet" />
   <!-- iconos -->
   <script src="https://kit.fontawesome.com/36c7cc7f6f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -23,7 +28,7 @@
     <div class="header">
       <div>
         <a href="#">
-          <img class="logo" src="/assets/img/logo-nf-completo.webp" alt="logo neighborFood">
+          <img class="logo" src="/assets/img/header/logo-nf-completo.webp" alt="logo neighborFood">
         </a>
       </div>
       <div class="search">
@@ -34,194 +39,223 @@
         <a href="/html/login.html">INGRESA
         </a>
       </div>
-
     </div>
   </header>
-
-  <div class="parrafo_1">
-    <br>
-    <b>¿Que tipo de restaurante estas buscando?</b>
-  </div>
-  <div class="tipos">
-  <div class="opcionrestaurante">
-    <br>
-    <button><a href="#">Vegano</a></button>
-    <button><a href="#">Familiares</a></button>
-    <button><a href="#">Casuales</a></button>
-    <button><a href="#">Gourmet</a></button>
-    <button><a href="#">FastFood</a></button>
-    <button><a href="#">Buffet</a></button>
-  </div>
-</div>
-  <div class="parrafo_2">
-    <br>
-    <b>Cerca de ti</b>
-
-  </div>
-  <div class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39281050433!2d-74.24789162730347!3d4.648625932665816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1654955234511!5m2!1ses!2sco"></iframe>
-
-  </div>
-  <div class="separador1"></div>
-  <div class="scrollcomidas">
-
-
-    <div>
-      <br><br>
-      <img class="lalucha" src="/assets/img/lalucha.jpeg">
-      <b> Lucha sangucheria</b>
-      <br><br>
-      Cra 78 #3A-54
-      <br"><br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident obcaecati id deleniti, quia iste
-        corporis veritatis quam asperiores, optio vero.
-
-    </div>
-    <br><br><br><br>
-    <div>
-      <img class="poke57" src="/assets/img/beerCompany.jpeg">
-      <b> BEER COMPANY</b>
-      <br><br>
-      Cra 54 #4A-72
-      <br><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident obcaecati id deleniti, quia iste
-      corporis veritatis quam asperiores, optio vero corrupti illum explicabo et! Ducimus necessitatibus porro.
-
-    </div>
-    <br><br><br><br>
-    <div>
-      <img class="SopayPostres" src="/assets/img/sopasypostres.jpeg">
-      <b> Sopa y Postres</b>
-      <br><br>
-      Cra 42 #2A-64
-      <br><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente provident obcaecati id deleniti, quia iste
-      corporis veritatis quam asperiores, optio vero corrupti illum explicabo et! Ducimus necessitatibus porro.
-    </div>
-    <br><br>
-  </div>
-
-  <br><br>
-  <div class="parrafo_3">
-    <b>Destacados de la semana</b>
-  </div>
-
-  <!-- verificando que este todo correcto  -->
-  <div id="conItemscarrusel" >
-  <div class="itemcarrusel1" id="itemcarrusel-1">
-    <div class="tarjetacarrusel1" id="tarjetaCarrusel-1" >
-        <img class = "sliderimagen"src="/assets/img/chikbroster.jpeg">
-    </div>
-    <div class="flechascarrusel1">
-      <a href="#itemcarrusel-4">
-        <i class="fa-solid fa-chevron-left"></i>
-    </a>
-    <a href="#itemcarrusel-2">
-      <i class="fa-solid fa-chevron-right"></i>
-    </a>
-    </div>
-
-    <div id="conItemscarrusel" >
-      <div class="itemcarrusel1" id="itemcarrusel-2">
-        <div class="tarjetacarrusel1" id="tarjetaCarrusel-2">
-          <img class = "sliderimagen" src="/assets/img/elrancherito.jpeg">
+  <main>
+    <section class="topics">
+      <h2 class="subtitle">¿Que tipo de restaurante estas buscando?</h2>
+      <nav class="topics-option">
+        <a href="#">Vegano</a>
+        <a href="#">Familiares</a>
+        <a href="#">Casuales</a>
+        <a href="#">Gourmet</a>
+        <a href="#">FastFood</a>
+        <a href="#">Buffet</a>
+      </nav>
+    </section>
+    <section class="suggestions">
+      <h2 class="subtitle">Cerca de tí</h2>
+      <div class="suggestions-container">
+        <div class="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39281050433!2d-74.24789162730347!3d4.648625932665816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1654955234511!5m2!1ses!2sco"></iframe>
         </div>
-        <div class="flechascarrusel1">
-        <a href="#itemcarrusel-1">
-          <i class="fa-solid fa-chevron-left"></i>
-        </a>
-        <a href="#itemcarrusel-3">
-          <i class="fa-solid fa-chevron-right"></i>
-       </a>
+        <div class="scroll-suggestions">
+          <a href="#">
+            <div class="card">
+              <figure class="image-container">
+                <img class="image" src="/assets/img/index/suggestions/restaurant-1.webp" alt="">
+              </figure>
+              <div class="content">
+                <h3>La Lucha sangucheria</h3>
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Cra 78 #3A-54</span>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione sequi asdasa praesentium ea laboriosam fugiat tenetur.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <figure class="image-container">
+                <img class="image" src="/assets/img/index/suggestions/restaurant-2.webp" alt="">
+              </figure>
+              <div class="content">
+                <h3>GreenPoké</h3>
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Av Calle 28 ##17-72</span>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione sequi asdasa praesentium ea laboriosam fugiat tenetur.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <figure class="image-container">
+                <img class="image" src="/assets/img/index/suggestions/restaurant-3.webp" alt="">
+              </figure>
+              <div class="content">
+                <h3>Restaurante Capitalino</h3>
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Cl. 24a #57-60</span>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione sequi asdasa praesentium ea laboriosam fugiat tenetur.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <figure class="image-container">
+                <img class="image" src="/assets/img/index/suggestions/restaurant-4.webp" alt="">
+              </figure>
+              <div class="content">
+                <h3>Pizza Candelaria</h3>
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Cra. 2 #12c-23 Local 2</span>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ratione sequi asdasa praesentium ea laboriosam fugiat tenetur.
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-
-        <div class="itemcarrusel1" id="itemcarrusel-3">
-          <div class="tarjetacarrusel1" id="tarjetaCarrusel-3">
-            <img class = "sliderimagen" src="/assets/img/restaurante.jpeg">
+    </section>
+    <section class="highlights">
+      <h2 class="subtitle">Destacados de la semana</h2>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="content-slider">
+            <a href="#">
+              <img src="/assets/img/index/highlights/chikbroaster.webp" alt="El Rancherito">
+              <h3 class="name-restaurant">El Rancherito</h3>
+            </a>
           </div>
-          <div class="flechascarrusel1">
-            <a href="#itemcarrusel-2">
-              <i class="fa-solid fa-chevron-left"></i>
-          </a>
-          <a href="#itemcarrusel-4">
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
+          <div class="content-slider">
+            <a href="#">
+              <img src="/assets/img/index/highlights/creeps and wafle.webp" alt="Crepes & waffles">
+              <h3 class="name-restaurant">Creppes & Waffles</h3>
+            </a>
+          </div>
+          <div class="content-slider">
+            <a href="#">
+              <img src="/assets/img/index/highlights/el corral.webp" alt="corral">
+              <h3 class="name-restaurant">El Corral</h3>
+            </a>
+          </div>
+          <div class="content-slider">
+            <a href="#">
+              <img src="/assets/img/index/highlights/redburguer.webp" alt="redburguer">
+              <h3 class="name-restaurant">Red Burguer</h3>
+            </a>
+          </div>
+          <div class="content-slider">
+            <a href="#">
+              <img src="/assets/img/index/highlights/pizza-hut.webp" alt="pizzahut">
+              <h3 class="name-restaurant">Pizza Hut</h3>
+            </a>
           </div>
         </div>
-
-
+      </div>
+    </section>
+    <section class="filter-food">
+      <h2 class="subtitle">Filtrar por Plato</h2>
+      <div class="food-container">
+        <div class="food">
+          <a href="#">
+            <img src="/assets/img/index/filter-food/hamburguesa.webp" alt="Hamburguesa">
+            <h3>Hamburguesa</h3>
+          </a>
         </div>
-    </div>
-  </div>
+        <div class="food">
+          <a href="#">
+            <img src="/assets/img/index/filter-food/pizza.webp" alt="Pizza">
+            <h3>Pizza</h3>
 
-<br><br>
-  <div class="parrafo_4">
-    <b>Filtra por Plato</b>
-  </div>
+          </a>
+        </div>
+        <div class="food">
+          <a href="#">
+            <img src="/assets/img/index/filter-food/pollo.webp" alt="Pollo">
+            <h3>Pollo</h3>
 
-  <div class="filtrado">
-
-    <a href="#"><img src="/assets/img/filtrar por plato/hambuerguesa.png" alt="Hamburguesa"></a>
-
-    <a href="#"><img src="/assets/img/filtrar por plato/pizza.png" alt="Pizza"></a>
-
-      <a href="#"><img src="/assets/img/filtrar por plato/pollo.png" alt="Pollo"></a>
-
-        <a href="#"><img src="/assets/img/filtrar por plato/suchi.png" alt="Suchi"></a>
-
-          <a href="#"><img src="/assets/img/filtrar por plato/parrilla.png" alt="Parrilla"></a>
-
-            <a href="#"><img src="/assets/img/filtrar por plato/comidamarina.png" alt="comidamarina"></a>
-
-
-
-
-</div>
-<div class = "texto">
-<b>
-<p class="ha">Hamburguesa</a></p>
-<p class="pi">Pizza</p>
-<p class="po">Pollo</p>
-<p class="su">Suchi</p>
-<p class="pa">Parrilla</p>
-<p class="co">Comida Marina</p>
-</b>
-</div>
-
-<div class="separador0"></div>
-
-<footer>
-
-
-<div class="cuadro1">
-<img class = "loga" src="/assets/img/logo para index/logo para index.png">
-</div>
-
-
-<div class="cuadro2">
-
-<B class="titulo1">SOBRE NOSOTROS</B>
-<div class="separador"></div>
-<P class="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum cupiditate sit perspiciatis nemo sapiente dolorum saepe suscipit quis atque veritatis deserunt aspernatur, accusantium ad, temporibus dolor. Rem, laboriosam accusamus.</P>
-</div>
-
-<div class="cuadro3">
-  <B class="titulo2">SIGUENOS
- <div class="separador1"></div>
-    <img src="/assets/img/redes sociales/facebook.png" alt="">
-  <img src="/assets/img/redes sociales/instagram.png" alt="">
-  <img src="/assets/img/redes sociales/twiter.png" alt="">
-  <img src="/assets/img/redes sociales/youtube.png" alt="">
-</B>
-</div>
-
-
-
-
-
-
-</footer>
-
+          </a>
+        </div>
+        <div class="food">
+          <a href="#">
+            <img src="/assets/img/index/filter-food/suchi.webp" alt="Suchi">
+            <h3>Suchi</h3>
+          </a>
+        </div>
+        <div class="food">
+          <a href="#">
+            <img src="/assets/img/index/filter-food/parrilla.webp" alt="Parrilla">
+            <h3>Parrilla</h3>
+          </a>
+        </div>
+        <div class="food">
+          <a href="#">
+            <img src="/assets/img/index/filter-food/comidamarina.webp" alt="Comida Marina">
+            <h3>Comida Marina</h3>
+          </a>
+        </div>
+        <div class="food">
+          <a href="#">
+            <img src="/assets/img/index/filter-food/comidamexicana.webp" alt="Comida Mexicana">
+            <h3>Comida Mexicana</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <footer class="footer">
+      <div class="group-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img class="image-logo" src="/assets/img/index/footer/logo-nf-medio.webp" alt="">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda eius alias recusandae eligendi, at facere, veniam, doloribus nesciunt accusantium asperiores numquam?</p>
+        </div>
+        <div class="box" id="Contacto">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="https://facebook.com" class="fa-brands fa-facebook" target="_blank"></a>
+            <a href="https://youtube.com" class="fa-brands fa-youtube" target="_blank"></a>
+            <a href="https://instagram.com" class="fa-brands fa-instagram" target="_blank"></a>
+            <a href="https://twitter.com" class="fa-brands fa-twitter" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+      <div class="group-2">
+        <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos reservados</small>
+      </div>
+    </footer>
+  </footer>
+  <script>
+    $(document).ready(function () {
+      $('.slider').bxSlider({
+        auto: true,
+        controls:true,
+        pager: false,
+        adaptiveHeight: true,
+        slideMargin: 50,
+        slideWidth: 500,
+        minSlides: 4,
+        maxSlides: 5,
+      });
+    });
+  </script>
 </body>
 </html>

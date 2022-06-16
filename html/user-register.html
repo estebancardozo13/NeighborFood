@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/stylesSecond.css">
-    <link rel="styleSheet" href="/css/formularioregistro.css">
-    <link rel="shortcut icon" href="/assets/img/666.png">
+    <link rel="styleSheet" href="/css/user-register.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,9 +27,9 @@
                     <i class="fa-solid fa-arrow-left-long"></i>
                 </a>
             </div>
-            <div>
+            <div class="logo">
                 <a href="/index.html">
-                    <img class="logo" src="/assets/img/logo-nf-completo.webp" alt="logo neighborFood">
+                    <img src="/assets/img/header/logo-nf-completo.webp" alt="logo neighborFood">
                 </a>
             </div>
         </div>
@@ -38,13 +37,13 @@
     <main>
         <div class="image">
             <div class="image-waiter" type="img">
-                <img class="waiter" src="/assets/img/image-register.webp" alt="" />
+                <img class="waiter" src="/assets/img/user-register/image-register.webp" alt="" />
             </div>
         </div>
         <form class="register">
             <h1>Registro de usuario</h1>
             <fieldset>
-                <label  for="document">Tipo de documento:</label>
+                <label for="document">Tipo de documento:</label>
                 <select class="controls" name="documento" id="document">
                     <option value="0">Seleccione</option>
                     <option value="T.I">Tarjeta de Identidad</option>
@@ -54,11 +53,11 @@
                 </select>
             </fieldset>
             <fieldset>
-                <label  for="num_document">Numero de documento</label>
+                <label for="num_document">Numero de documento</label>
                 <input id="num_document" class="controls" type="text" placeholder="Numero De Documento" aria-label="Numero De Documento">
             </fieldset>
             <fieldset>
-                <label for="gender" >Elige tu genero:</label>
+                <label for="gender">Elige tu genero:</label>
                 <select name="gender" id="gender" class="controls">
                     <option value="0">Seleccionar</option>
                     <option value="F">Femenino</option>
@@ -67,11 +66,11 @@
                 </select>
             </fieldset>
             <fieldset>
-                <label  for="name">Nombre(s)</label>
+                <label for="name">Nombre(s)</label>
                 <input class="controls" id="name" type="text" placeholder="Nombres" aria-label="Nombres">
             </fieldset>
             <fieldset>
-                <label  for="surname">Apellido(s)</label>
+                <label for="surname">Apellido(s)</label>
                 <input class="controls" id="surname" type="text" placeholder="Apellidos" aria-label="Apellidos">
             </fieldset>
             <fieldset>
@@ -80,14 +79,11 @@
             </fieldset>
             <fieldset>
                 <label for="phone">Celular</label>
-                <input class="controls" type="number" placeholder="Telefono Celular" aria-label="Telefono Celular">
+                <input id="phone" class="controls" type="number" placeholder="Telefono Celular" aria-label="Telefono Celular">
             </fieldset>
             <fieldset>
                 <label for="localidades">Elige tu localidad:</label>
-                <select class="controls"
-                name="localidad"
-                id="localidades"
-                >
+                <select class="controls" name="localidad" id="localidades">
                     <option value="Select">Seleccionar</option>
                     <option value="Usa">Usaquén</option>
                     <option value="Cha">Chapinero</option>
@@ -112,11 +108,11 @@
                 </select>
             </fieldset>
             <fieldset>
-                <label  for="password">Ingresa su contraseña</label>
+                <label for="password">Ingresa su contraseña</label>
                 <input class="controls" id="password" type="password" placeholder="Ingresa tu Contraseña" aria-label="Ingresa tu Contraseña">
             </fieldset>
             <fieldset>
-                <label  for="confirm-password">Confirma tu contraseña</label>
+                <label for="confirm-password">Confirma tu contraseña</label>
                 <input class="controls" id="confirm-password" type="password" placeholder="Confirma tu Contraseña" aria-label="Confirme Contraseña">
             </fieldset>
             <fieldset class="terms-conditions">
@@ -132,14 +128,14 @@
                     No
                 </label>
             </fieldset>
-                <button class="button">Registrarse </button>
-                <a href="/html/login.html" class="account">¿ya tengo cuenta?</a>
+            <a class="button" href="/html/profile.html">Registrarse</a>
+            <a href="/html/login.html" class="account">¿ya tengo cuenta?</a>
         </form>
     </main>
     <footer>
         <div class="copyright">
             <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos reservados</small>
-          </div>
+        </div>
     </footer>
 </body>
 </html>

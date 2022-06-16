@@ -1,16 +1,7 @@
 /* Miguel */
-
-
-main {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
 .waiter {
     width: 730px;
     margin-left: 200px;
-
 }
 
 .register {
@@ -22,7 +13,6 @@ main {
     border: none;
     overflow: auto;
     margin: 0 100px 0 auto;
-    /* display: grid; */
     border-radius: 45px;
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
@@ -84,6 +74,8 @@ main {
 }
 
 .button {
+    display: block;
+    text-align:center ;
     background-color: #dda15e;
     border: none;
     width: 100%;
@@ -117,17 +109,7 @@ main {
     font-size: 22px;
 }
 
-a:hover {
+.account:hover,
+.ter-cont:hover {
     text-decoration: underline;
-}
-
-.copyright{
-    background-color: #283618;
-    padding: 15px 0;
-    text-align: center;
-    color: #fff;
-}
-
-.copyright small{
-    font-size: 20px;
 }

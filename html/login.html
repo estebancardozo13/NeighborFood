@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Neighborfood</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/stylesSecond.css">
-    <link rel="stylesheet" href="/css/login.css" />
-    <link rel="shortcut icon" href="assets/img/666.png">
+    <link rel="stylesheet" href="/css/login.css"/>
 
-    <!-- iconos -->
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/139d37edbf.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
 </head>
 
@@ -23,49 +26,40 @@
                     <i class="fa-solid fa-arrow-left-long"></i>
                 </a>
             </div>
-            <div>
+            <div class="logo">
                 <a href="/index.html">
-                    <img class="logo" src="/assets/img/logo-nf-completo.webp" alt="">
+                    <img src="/assets/img/header/logo-nf-completo.webp" alt="logo neighborFood">
                 </a>
             </div>
         </div>
     </header>
-
-    <div class="bogota">
-        <img id="imgbog" src="/assets/img/bogota.png">
-    </div>
-    <form id="form">
-        <div class="container">
-            <div class="loginR">
-                <div class="contenido">
-                    <h1 class="inicio">Iniciar Sesión</h1>
-                    <div class="botonesR">
-                        <div class="ingreso btn1">
-                            <i id="btn1" class='bx bxl-google bx-md'></i>
-                            <button class="btn">Ingresar con Google</button>
-                        </div>
-                        <br><br>
-                        <div class="ingreso btn2">
-                            <i id="btn2" class='bx bxl-facebook-circle bx-md'></i>
-                            <button id="facebook" class="btn">Ingresar con facebook</button>
-
-                        </div>
-                        <br><br>
-                        <div class="ingreso btn3">
-                            <i id="btn3" class='bx bxs-envelope bx-md'></i>
-                            <button class="btn"> <a id="correo1" href="loginCorreo.html">Ingresar con Correo</a></button>
-                        </div>
-                    </div>
-
-                    <H4>¿No se ha registrado aún?</H4>
-
-                    <label><a class="registro" href="/html/formularioregistro.html">Registrate aqui</a></label>
-                </div>
+    <main>
+        <div class="image-container">
+            <img id="img-bog" src="/assets/img/login/bogota.webp" alt="">
+        </div>
+        <div class="login">
+            <h1 class="title">Iniciar Sesión</h1>
+            <div class="buttons">
+                    <a href="#" class="log-in">
+                        <i class="fa-brands fa-google"></i>
+                        Ingresar con Google
+                    </a>
+                    <a href="#" class="log-in">
+                        <i class="fa-brands fa-facebook"></i>
+                        Ingresar con facebook
+                    </a>
+                    <a href="login-email.html" class="log-in">
+                        <i class="fa-solid fa-at"></i>
+                        Ingresar con Correo</a>
             </div>
-    </form>
-    <!-- <div id ="error"></div> -->
-    <script src="/js/validacion.js"></script>
-    <!--   <script src="/js/conexiones.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+            <h2>¿No te has registrado aún?</h2>
+            <a class="registro" href="/html/user-register.html">Registrate aquí</a>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
 </body>
 </html>
