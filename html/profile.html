@@ -8,6 +8,7 @@
 
   <!-- Estilos -->
   <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/stylesFirst.css">
   <link rel="stylesheet" href="/css/profile.css" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +22,7 @@
   <header>
     <div class="header">
       <div>
-        <a href="#">
+        <a href="/index.html">
           <img class="logo" src="/assets/img/header/logo-nf-completo.webp" alt="logo neighborFood">
         </a>
       </div>
@@ -33,15 +34,13 @@
         <a href="#">¡Hola Sergio!
         </a>
       </div>
-
     </div>
   </header>
   <main>
-    <div class="account">
-      <div class="nav-tabs">
+    <div class="nav-tabs">
       <div class="profile-picture">
         <figure>
-          <img class="profile-image" src="/assets/img/profile.webp" alt="profile">
+          <img class="profile-image" src="/assets/img/profile/profile.webp" alt="profile">
         </figure>
         <div class="caption-data">
           <h1 class="caption-profile">Mi perfil</h1>
@@ -56,7 +55,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="">
             <i class="fa-solid fa-shop"></i>
             Puntos Acumulados
           </a>
@@ -73,51 +72,62 @@
           </a>
         </li>
         </li>
-        <li>
+        <li class="ultimate-shop">
           <a href="">
             <i class="fa-solid fa-clock-rotate-left"></i>
             Mis ultimas compras
           </a>
         </li>
       </ul>
-      </div>
-      <div class="cont-tabs">
-        <h2>Información de tu cuenta</h2>
-        <form class="form">
-          <fieldset>
-            <label for="profile-name">Nombre(s)</label>
-            <input type="text" id="profile-name" minlength="3" maxlength="25">
-          </fieldset>
-          <fieldset>
-            <label for="profile-surname">Apellido(s)</label>
-            <input type="text" id="profile-surname" minlength="3" maxlength="25">
-          </fieldset>
-          <fieldset>
-            <label for="profile-email">Correo Electronico</label>
-            <input type="email" id="profile-email">
-          </fieldset>
-          <fieldset>
-            <label for="profile-phone">Celular</label>
-            <input type="number" name="phone" id="profile-phone ">
-          </fieldset>
-          <fieldset>
-            <label for="profile-id">Numero de identificación</label>
-            <input type="text" minlength="3">
-          </fieldset>
-          <fieldset>
-            <label for="profile-birth">Fecha de Nacimiento</label>
-            <input type="date">
-          </fieldset>
-          <fieldset>
-            <small>Género</small>
-            <label for="M">Hombre</label>
-            <input type="radio" name="gender" id="M">
-            <label for="M">Mujer</label>
-            <input type="radio" name="gender" id="F">
-          </fieldset>
-        </form>
-      </div>
+    </div>
+    <div class="cont-tabs">
+      <h2>Información de tu cuenta</h2>
+      <form class="form">
+        <fieldset>
+          <label for="profile-name">Nombre(s)</label>
+          <input type="text" id="profile-name" minlength="3" maxlength="25">
+        </fieldset>
+        <fieldset>
+          <label for="profile-surname">Apellido(s)</label>
+          <input type="text" id="profile-surname" minlength="3" maxlength="25">
+        </fieldset>
+        <fieldset>
+          <label for="profile-email">Correo Electronico</label>
+          <input type="email" id="profile-email">
+        </fieldset>
+        <fieldset>
+          <label for="profile-phone">Celular</label>
+          <input type="number" name="phone" id="profile-phone">
+        </fieldset>
+        <fieldset>
+          <label for="profile-id">Numero de identificación</label>
+          <input id="profile-id" type="text" minlength="3">
+        </fieldset>
+        <fieldset>
+          <label for="profile-birth">Fecha de Nacimiento</label>
+          <input id="profile-birth" type="date">
+        </fieldset>
+        <fieldset>
+          <small>Género</small>
+          <label class="gender">
+            <input type="radio" name="gender">
+            Hombre
+          </label>
+          <label class="gender">
+            <input type="radio" name="gender">
+            Mujer
+          </label>
+        </fieldset>
+        <fieldset>
+          <a class="btn" href="#">Guardar Cambios</a>
+        </fieldset>
+      </form>
     </div>
   </main>
+  <footer>
+    <div class="copyright">
+      <small>&copy; 2022 <b>NeighborFood</b> - Todos los derechos reservados</small>
+    </div>
+  </footer>
 </body>
 </html>

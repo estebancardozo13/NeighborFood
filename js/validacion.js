@@ -21,4 +21,3 @@ function validacion(){
     error.innerHTML = mensajeError.join(', ');
     return false;
 }
-
