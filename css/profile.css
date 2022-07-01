@@ -55,8 +55,8 @@ main{
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-
 }
+
 .name {
   display: block;
   width: 500px;
@@ -136,7 +136,7 @@ main{
 }
 
 .form input {
-  width: 480px;
+  width: 450px;
   padding: 10px;
   font-size: 25px;
   border:none;
