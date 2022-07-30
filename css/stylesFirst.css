@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -10,28 +8,45 @@ body {
   background-color: #fefae0;
 }
 
-header {
-  overflow: hidden;
-  background-color: #283618;
-  height: 60px;
-  width: 100%;
+a{
+  text-decoration: none;
+  color: currentColor;
 }
 
 .header {
-  height: 60px;
-  margin: 0 50px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  height: 60px;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #283618;
+  overflow: hidden;
 }
+
+@media screen and (max-width:768px){
+  .header{
+    justify-content: center;
+  }
+}
+
 
 .logo {
-  margin-right: auto;
-  height: 45px;
+  width: 300px;
+  margin-left: 2em;
 }
 
-.search {
+@media screen and (max-width:768px){
+  .logo{
+    width: 250px;
+    margin: 0;
+  }
+}
+
+
+.search-bar {
+  padding: .3em 1em;
   background-color: #fff;
-  margin-left: auto;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -39,53 +54,52 @@ header {
   -o-border-radius: 30px;
 }
 
-.barra {
- margin-left: auto;
-  font-size: 20px;
-  height: 40px;
-  width: 320px;
-  border: none;
-  outline: none;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+@media screen and (max-width:992px){
+
+  .search-bar{
+    display: none;
+  }
+
 }
 
-.search i {
+.search-bar__icon{
   color: #283618;
-  font-size: 20px;
-  margin-left: 15px;
+}
+
+.search-bar__form {
+  border: none;
+  border-radius: 3em;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+  outline: none;
 }
 
 .login {
-  margin-left: auto;
-
-}
-
-.login a {
-  padding: 10px;
-  border: none;
-  height: 40px;
-  width: 40px;
+  margin-right: 2em;
+  padding: .5em .8em;
   color: #fff;
-  font-weight: 600;
-  font-size: 20px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
-
+  font-weight: bold;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  transition: .3s all ease;
+  -webkit-transition: .3s all ease;
+  -moz-transition: .3s all ease;
+  -ms-transition: .3s all ease;
+  -o-transition: .3s all ease;
 }
 
-.login a:hover{
+@media screen and (max-width:768px){
+  .login{
+    display: none;
+  }
+}
+
+.login:hover{
   color: #283618;
   background-color: #fff;
 }
